@@ -58,18 +58,18 @@ useEffect(()=>{
 
     <form >
         <div class="form-group pt-5">
-            <label for="formGroupExampleInput mt-1"> Admin Name</label>
-            <input type="text" class="form-control mt-2" id="formGroupExampleInput" placeholder="Enter admin name" name='name' value={selectedUser.name} onChange={onChange}/>
+            <label for="formGroupExampleInput mt-1" style={{color:"#2d4721f7",fontSize:'25px'}}> Employee Name</label>
+            <input type="text" class="form-control mt-2" id="formGroupExampleInput" placeholder="Enter employee name" name='name' value={selectedUser.name} onChange={onChange}/>
         </div>
         <div class="form-group pt-5">
-            <label for="formGroupExampleInput2">Admin Email</label>
-            <input type="email" class="form-control mt-2" id="formGroupExampleInput2" placeholder="Enter admin email" name='email' value={selectedUser.email} onChange={onChange}/>
+            <label for="formGroupExampleInput2" style={{color:"#2d4721f7",fontSize:'25px'}}>Employee Email</label>
+            <input type="email" class="form-control mt-2" id="formGroupExampleInput2" placeholder="Enter employee email" name='email' value={selectedUser.email} onChange={onChange}/>
         </div>
         <div class="form-group pt-5">
-            <label for="formGroupExampleInput2">Admin Address</label>
-            <input type="text" class="form-control mt-2" id="formGroupExampleInput2 " placeholder="Enter admin address" name='address' value={selectedUser.address} onChange={onChange}/>
+            <label for="formGroupExampleInput2" style={{color:"#2d4721f7",fontSize:'25px'}}>Employee Address</label>
+            <input type="text" class="form-control mt-2" id="formGroupExampleInput2 " placeholder="Enter employee address" name='address' value={selectedUser.address} onChange={onChange}/>
         </div>
-       <button type="submit" className="btn btn-outline-success mt-5" onClick={handleCklick}>edit </button>
+       <button type="submit" className="btn btn-outline-success mt-5" style={{width:'100px'}} onClick={handleCklick}>edit </button>
 
     </form>
 

@@ -52,7 +52,7 @@ export const updateUser = async(data,id) => {
     // window.location.href = "http://localhost:3001";
     swal({
             title: "Good job!",
-            text: "User updated successfully!",
+            text: "Employee updated successfully!",
             icon: "success",
             button: "ok!",
           }).then(function() {
@@ -72,7 +72,7 @@ export const deleteUser = async(id) => {
     // window.location.href = "http://localhost:3001";
     swal({
         title: "Good job!",
-        text: "User deleted successfully!",
+        text: "Employee deleted successfully!",
         icon: "success",
         button: "ok!",
       }).then(function() {

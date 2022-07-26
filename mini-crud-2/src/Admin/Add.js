@@ -25,7 +25,7 @@ const Add = () => {
       dispatch(addUser(name,email,address));
       swal({
         title: "Good job!",
-        text: "Adding user success!",
+        text: " Employee added successfuly!",
         icon: "success",
         button: "ok!",
       }).then(function() {
@@ -33,14 +33,7 @@ const Add = () => {
     });
   
     }
-    //  if(handleCklick()==true)
-    //     swal({
-    //       text: "Adding user failed!",
-    //       icon: "warning",
-    //       buttons: true,
-    //       dangerMode: true,
-    //     });
-    //   else
+  
       
 
     return (

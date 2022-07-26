@@ -17,19 +17,19 @@ export default function Login() {
   return (
 
 
-    <div class="container">
+    <div class="container" style={{width:"60%",margin:"60px"}}>
         <form>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
+    <div class="form-group pt-5">
+      <label for="exampleInputEmail1" style={{color:"#385e26f7",fontSize:'25px'}}>Email address</label>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email" onChange={(e)=>setEmail(e.target.value)} required/>
 
     </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
+    <div class="form-group pt-5">
+      <label for="exampleInputPassword1" style={{color:"#385e26f7",fontSize:'25px'}}>Password</label>
       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" onChange={(e)=>setpassword(e.target.value)} required/>
     </div>
 
-    <button type="submit" class="btn btn-primary" onClick={handleClick}>Submit</button>
+    <button type="submit" class="btn btn-outline-success mt-5" style={{width:'100px'}} onClick={handleClick}>Submit</button>
   </form></div>
   )
 }
