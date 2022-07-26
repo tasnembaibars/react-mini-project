@@ -24,7 +24,9 @@ export const projectReducer = (state={ user: [] },action) => {
                     return users.id !== action.payload.id
             })
         }
- 
+        case "CHECK_USER":
+            console.log(action.payload)
+        return action.payload
     default:
        return state;
  }

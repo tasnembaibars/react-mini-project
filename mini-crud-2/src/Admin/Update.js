@@ -3,6 +3,7 @@ import { useSelector,useDispatch } from 'react-redux/es/exports';
 import { updateUser } from '../Action';
 import { useParams } from 'react-router-dom';
 import { fetchData } from '../Action';
+import swal from 'sweetalert';
 const Update = () => {
   const {id}=useParams();
  
@@ -29,12 +30,23 @@ useEffect(()=>{
       },[updateSelected])
       
          console.log(selectedUser)
+         
       const handleCklick=(e)=>{
         e.preventDefault();
 
      dispatch(updateUser(selectedUser,id));
+      
+     swal({
+          title: "Good job!",
+          text: "Adding user success!",
+          icon: "success",
+          button: "ok!",
+        }).then(function() {
+          window.location.href="/";
+      });
+      
       }
-
+    
       const onChange=(e)=>{
         e.preventDefault();
         const value=e.target.value
@@ -42,7 +54,7 @@ useEffect(()=>{
        }
 
   return (
-    <div>
+    <div style={{width:"60%",margin:"60px"}}>
 
     <form >
         <div class="form-group pt-5">
